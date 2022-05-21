@@ -23,12 +23,10 @@ body.dark{
     --White : hsla(0, 0%, 100%, 0.111);
     color: rgba(255, 255, 255, 0.948);
 }
-
          /*  header sec  */
 #togo,.ser::placeholder,.fbr button{
     color: inherit;
-}
-header{
+}header{
     padding: 20px 15px;
     background: var(--White);
     display: flex;
@@ -36,8 +34,7 @@ header{
     align-items: center;
     margin-bottom: 20px;
     box-shadow: 0 0 15px 2px  rgba(0, 0, 0, 0.049);
-}
-header input{
+}header input{
     background: none;
     border: none;
 }
@@ -46,8 +43,7 @@ header input{
     width: 100vw;
     padding: 0 20px;
     position: relative;
-}
-.ser{
+}.ser{
   border: none;
   background:var(--White);
   color: inherit;
@@ -58,9 +54,7 @@ header input{
   margin: 0 auto 30px auto;
   border-radius: 5px;
   box-shadow: 0 0 20px 2px  rgba(0, 0, 0, 0.049);
-}
-
-.fbr{
+}.fbr{
     display: flex; 
     justify-content: space-between;
     flex-direction: column;
@@ -69,76 +63,65 @@ header input{
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 20px 2px  rgba(0, 0, 0, 0.049);
-
-}
-.fbr button{
+}.fbr button{
     font-size: 16px;
     background: none;
     border: none;
     align-items: center;
-}
-.fb{
+    cursor: pointer;
+}.fb{
     display: none;
     align-items: start;
-}
-.fb ul{
+}.fb ul{
     list-style: none;
-}
-.fb ul li{
+    position: absolute;
+    background:var(--White);
+     width: 170px;
+     z-index: 9999;
+     border-radius: 0 0 10px 10px;
+     padding: 25px 5px;
+}.fb ul li{
     list-style: none;
      padding: 5px;
      margin-left: 15px;
-}
-.fb ul li:hover,.fbr button:hover{
+}.fb ul li:hover{ 
     cursor: pointer;
     transform: scale(1.1);
-}
-
-         /*  cards sec  */
+}     
+                 /*  cards sec  */
 a{
     text-decoration: none;
     color: var(--Very-Dark-Blue-t);
-}      
-
-.card{
+}.card{
     width: 270px;
     position: relative;
     margin: 40px auto;
     background: var(--White);
     border-radius: 7px;
     box-shadow: 0px 0px 6px 0.1px rgba(0, 0, 0, 0.207);
-}
-.card p{
+}.card p{
     margin-bottom: 10px;
-}
-.card h1{
+}.card h1{
     margin-bottom: 20px;
-}
-.texto{
+}.texto{
     padding: 20px 30px;
-}
-.card img{
+}.card img{
   width: 100%;
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
 }
          /* screen cards sec  */
-
 #countries{
     display: grid;
     grid-template-columns: repeat(1,340px);
     margin: 0 auto;
     width: 340px;
-}
-@media(min-width:700px){
-   
+}@media(min-width:700px){
     #countries{
         grid-template-columns: repeat(2,340px);
         width: 680px;
     }
-}
-@media(min-width:1000px){
-
+}@media(min-width:1000px){
     .inpo{
         display: flex;
         justify-content: space-between;
@@ -156,8 +139,7 @@ a{
         grid-template-columns: repeat(3,320px);
         width: 960px;
     }
-}
-@media(min-width:1320px){
+}@media(min-width:1320px){
     #countries{
         grid-template-columns: repeat(4,320px);
         width: 1300px;
